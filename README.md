@@ -6,6 +6,11 @@
 
 - For the noise-based framework, we update the UAP with the calculated gradient proposed in representative and simple [F-UAP](https://openaccess.thecvf.com/content_CVPR_2020/html/Zhang_Understanding_Adversarial_Examples_From_the_Mutual_Influence_of_Images_and_CVPR_2020_paper.html).
 - For the generator-based framework, we update the UAP generation network with conventional training techniques in [GAP](https://openaccess.thecvf.com/content_cvpr_2018/html/Poursaeed_Generative_Adversarial_Perturbations_CVPR_2018_paper.html).
+## Run
+Run `bash generator-based/run.sh` to generate UAPs or test performance for generator-based methods. The bash script should be easy to adapt to perform different experiments of non-targeted attacks.
+Run `bash generator-based/run_target.sh` to generate UAPs or test performance for generator-based methods. The bash script should be easy to adapt to perform different experiments of targeted attacks.
+Run `bash noise-based/run.sh` to generate UAPs or test performance for noise-based methods. The bash script should be easy to adapt to perform different experiments of non-targeted attacks.
+Run `bash noise-based/run_target.sh` to generate UAPs or test performance for noise-based methods. The bash script should be easy to adapt to perform different experiments of targeted attacks.
 
 ## Acknowledgments
 Our code is based on [F-UAP](https://github.com/phibenz/uap_virtual_data.pytorch) and [GAP](https://github.com/OmidPoursaeed/Generative_Adversarial_Perturbations)
