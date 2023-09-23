@@ -11,7 +11,9 @@
 - Run `bash generator-based/run_target.sh` to generate UAPs or test performance for generator-based methods. The bash script should be easy to adapt to perform different experiments of targeted attacks.
 - Run `bash noise-based/run.sh` to generate UAPs or test performance for noise-based methods. The bash script should be easy to adapt to perform different experiments of non-targeted attacks.
 - Run `bash noise-based/run_target.sh` to generate UAPs or test performance for noise-based methods. The bash script should be easy to adapt to perform different experiments of targeted attacks.
-
+## Defense Model
+- Download the defense model from [Quark](https://pan.quark.cn/s/f9eeda3876a9) (Password:x9cT)
+- Put models under ./pretrained_models
 ## Acknowledgments
 Our code is based on [F-UAP](https://github.com/phibenz/uap_virtual_data.pytorch) and [GAP](https://github.com/OmidPoursaeed/Generative_Adversarial_Perturbations)
 if you use our code, please also cite their paper.
