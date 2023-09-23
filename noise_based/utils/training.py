@@ -112,7 +112,7 @@ for idx in range(3):
     std_tensor[:,idx] *= std[idx]
 mean_tensor, std_tensor = mean_tensor.cuda(), std_tensor.cuda()
 import sys
-sys.path.append(os.path.abspath('/home/imt-3090-1/zmluo/attack/defense'))
+sys.path.append(os.path.abspath('../defense'))
 from NRP import *
 
 def metrics_evaluate(data_loader, target_model, perturbed_model, targeted, target_class, log=None, use_cuda=True,nrp=False):
@@ -135,7 +135,7 @@ def metrics_evaluate(data_loader, target_model, perturbed_model, targeted, targe
 
     if nrp == True:
         purifier = NRP(3, 3, 64, 23)
-        purifier.load_state_dict(torch.load('/home/imt-3090-1/zmluo/attack/pretrained_models/NRP.pth'))
+        purifier.load_state_dict(torch.load('../pretrained_models/NRP.pth'))
         purifier = purifier.cuda()
 
     for input, gt in data_loader:
