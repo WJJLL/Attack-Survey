@@ -289,7 +289,7 @@ def test():
     total = 0
     if opt.nrp == True:
         purifier = NRP(3, 3, 64, 23)
-        purifier.load_state_dict(torch.load('/home/imt-3090-1/zmluo/attack/pretrained_models/NRP.pth'))
+        purifier.load_state_dict(torch.load('../pretrained_models/NRP.pth'))
         purifier = purifier.cuda()
 
 
