@@ -276,7 +276,7 @@ for idx in range(3):
     std_tensor[:,idx] *= std[idx]
 mean_tensor, std_tensor = mean_tensor.cuda(), std_tensor.cuda()
 import sys
-sys.path.append(os.path.abspath('/home/imt-3090-1/zmluo/attack/defense'))
+sys.path.append(os.path.abspath('../defense'))
 from NRP import *
 
 
